@@ -1,0 +1,37 @@
+aws_access_config:
+  access_key: "AKIA3DDUKIRTPHKBSWJI"
+  secret_key: "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"
+  region: "ap-south-1"
+
+aws_s3_bucket_config:
+  s3_bucket_name: "mlflow-ml-models"
+
+aws_sagemaker_config:
+  app_name: "mlops-experiment-app"
+  sagemaker_role_name: "mlops-sagemaker"
+  execution_role_arn: "arn:aws:iam::762600637542:role/mlops-sagemaker"
+
+aws_ecr_config:
+  docker_image_name: "mlops-experiment-app-image"
+  image_ecr_url: "966180254834.dkr.ecr.ap-south-1.amazonaws.com/mlops-experiment-app-image"
+
+aws_endpoint_config:
+  experiment_id: "0"
+  run_id: "87ba3aa844bd403d98835c6695192532"
+  model_name: "model"
+
+aws_database_config:
+  identifier: "mlops-mlflow"
+  engine: "mysql"
+  mysql_username: "admin"
+  mysql_password: "test12345"
+  engine_version: "8.0.28"
+  instance_class: "db.t2.micro"
+  allocated_storage: "20"
+  skip_final_snapshot: "true"
+  parameter_group_name: "default.mysql8.0"
+  mysql_instance_name: "mlops-experiment-mysql"
+  security_group_name: "mlops-mlflow"
+  vpc_id: "vpc-8f25c7e4"
+  publicly_accessible: "true"
+  aws_database_config: "Place-Holder"

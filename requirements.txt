@@ -1,0 +1,6 @@
+mlflow==1.23.1
+scikit-learn==1.0.2
+boto3
+from_root
+mysqlclient
+protobuf~=3.19.0
